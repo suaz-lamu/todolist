@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Todo App</h1>
+
+    <div id="login" class="card">
+      <h2>Login</h2>
+      <input id="email" type="email" placeholder="Email" class="input">
+      <input id="password" type="password" placeholder="Password" class="input">
+      <button onclick="login()" class="btn">Login</button>
+    </div>
+
+    <div id="main" style="display:none">
+      <div class="card">
+        <h2>Projects</h2>
+        <div id="projects" class="projects-list"></div>
+      </div>
+
+      <div class="card">
+        <h3>Create Project</h3>
+        <input id="pname" placeholder="Project name" class="input">
+        <input id="pdesc" placeholder="Description" class="input">
+        <input id="pstart" placeholder="Start date (YYYY-MM-DD)" class="input">
+        <input id="pend" placeholder="End date (YYYY-MM-DD)" class="input">
+        <button onclick="createProject()" class="btn">Create Project</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
